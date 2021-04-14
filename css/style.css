@@ -45,8 +45,9 @@ main{
   font-weight: 600;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 10%);
   color: black;
+  min-height: 8em;
   font-size: 2.5em;
   color: white;
 }
@@ -168,7 +169,12 @@ h2 {
   font-weight: 400;
   font-size: 1.5em;
 }
-
+h5 {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
 .arriba {
   position: fixed;
   font-size: 1em;
