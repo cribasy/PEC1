@@ -9,6 +9,7 @@ body {
   text-align: center;
 }
 
+
 main{
   margin: auto;
 }
@@ -85,8 +86,10 @@ main{
   border-style: none;
   font-family:  'Merriweather', serif;
   font-size: 1em;
-  padding: 0.5em;
-  width: 10em;
+  padding-top: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.5em;
   border-radius: 2em;
   color: white;
   margin-bottom: 2em;
@@ -340,6 +343,9 @@ li:last-child:after{
   object-fit: cover;
 }
 
+.listado p {
+  margin: 1em;
+}
 /* DETALLES */
 
 h4 {
