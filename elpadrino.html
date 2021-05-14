@@ -16,10 +16,10 @@
 
 <body>
 
-  <header class="hero-image"><a id="arriba"></a>
+  <header><a id="arriba"></a>
 
     <div class="menu">
-      <div id="logo"><a href="index.html"><span>FilmFood</span></a></div>
+      <div><a href="index.html"><img src="img/filmfood_logo.svg" alt="Filmfood" id="logo"></a></div>
         <nav>
           <ul>
             <li><a href="recetas.html">Recetas</a></li>
@@ -31,12 +31,23 @@
   </header>
 
 <main>
-    <div class="recetas">
     <h2>Spaguetti con albondigas | El Padrino</h2>
+
+    <div class="box">
+      <picture>
+        <source media="(max-width: 430px)"  srcset="/img/spaguetis-mobile.jpg">
+        <source media="(max-width: 830px)" srcset="/img/spaguetis-tablet.jpg">
+        <source media="(min-width: 831px)" srcset="/img/spaguetis-desktop.jpg">
+        <img class="cover" src="/img/elpadrino_spaguetis_receta.jpeg" alt="Spaguettis con albondigas">
+      </picture>
+    </div>
+
     <form action="pulpfiction.html"><input type="submit" value="Anterior" class="anterior"/></form>
     <form action="diamantes.html"><input type="submit" value="Siguiente" class="siguiente"/></form>
 
-      <img src="img/elpadrino_spaguetis_receta.jpeg" alt="Spaguettis El Padrino" class="cover">
+    <div class="autor">
+      <img src="img/borges_logo.png" alt="Cocina abierta" class="escritor">
+      <p>Artículo creado por: <a href="https://borges.community/"><br>Borges</a></p>
     </div>
 
   <div class="ficha">
@@ -71,18 +82,24 @@
         <div class="explicacion">
           <h3>Como prepararlos</h3>
           <p>Calentar el aceite en una cazuela y añadir el ajo picado fino.
+            Trocear groseramente los tomates en caso de que vengan enteros y retirarles cualquier resto de piel.
+            Cuando el ajo esté bailando y sin que haya cogido aún casi color, verter encima los tomates y la pasta de tomate concentrado. Remover y cocinar 10 minutos a fuego medio-alto sin que el contenido se agarre al fondo del recipiente.
+            Añadir las albóndigas cocinadas y las salchichas troceadas.
+            Agregar el vino tinto, el azúcar y salpimentar al gusto.
+            Dejar reducir la salsa a fuego lento durante al menos 20 minutos, corregir el punto de sal y añadir si gusta una cucharada de orégano o de albahaca fresca bien picados.
+            Cocer la pasta, escurrirla y servir cada plato con un cazo de salsa.</p>
+      </div>
 
-Trocear groseramente los tomates en caso de que vengan enteros y retirarles cualquier resto de piel.
-
-Cuando el ajo esté bailando y sin que haya cogido aún casi color, verter encima los tomates y la pasta de tomate concentrado. Remover y cocinar 10 minutos a fuego medio-alto sin que el contenido se agarre al fondo del recipiente.
-
-Añadir las albóndigas cocinadas y las salchichas troceadas.
-
-Agregar el vino tinto, el azúcar y salpimentar al gusto.
-
-Dejar reducir la salsa a fuego lento durante al menos 20 minutos, corregir el punto de sal y añadir si gusta una cucharada de orégano o de albahaca fresca bien picados.
-
-Cocer la pasta, escurrirla y servir cada plato con un cazo de salsa.</p>
+      <div class="box2">
+            <img class="cover"
+                 srcset="/img/spaguettis_detalle-430w.jpg 430w,
+                        /img/spaguettis_detalle-830w.jpg 830w,
+                        /img/spaguettis_detalle-1037w.jpg 1037w"
+                sizes="(max-width: 430px) 430px,
+                (max-width: 830px) 830px,
+                 1037px"
+                src="/img/spaguettis_detalle-430w.jpg"
+                alt="Spaguetttis con albondigas receta">
       </div>
 
         <div  class="explicacion">
@@ -91,6 +108,10 @@ Cocer la pasta, escurrirla y servir cada plato con un cazo de salsa.</p>
       </div>
   </article>
 </div>
+
+<p>Creo que Michael no estaba demasiado interesado en la cocina</p>
+<img src="img/elpadrino_spaguetis.jpeg" alt="Escena El Padrino" class="mask2">
+
 
 </main>
 

@@ -16,10 +16,10 @@
 
 <body>
 
-  <header class="hero-image"><a id="arriba"></a>
+  <header><a id="arriba"></a>
 
     <div class="menu">
-      <div id="logo"><a href="index.html"><span>FilmFood</span></a></div>
+      <div><a href="index.html"><img src="img/filmfood_logo.svg" alt="Filmfood" id="logo"></a></div>
         <nav>
           <ul>
             <li><a href="recetas.html">Recetas</a></li>
@@ -31,12 +31,23 @@
   </header>
 
 <main>
-    <div class="recetas">
     <h2>Croissants | Desayuno con diamantes</h2>
+  <div class="box">
+    <picture>
+      <source media="(max-width: 430px)"  srcset="/img/croissant-mobile.jpg">
+      <source media="(max-width: 830px)" srcset="/img/croissant-tablet.jpg">
+      <source media="(min-width: 831px)" srcset="/img/croissant-desktop.jpg">
+      <img class="cover" src="/img/croissant.jpeg" alt="Croissant mantequilla">
+    </picture>
+  </div>
+
+
     <form action="elpadrino.html"><input type="submit" value="Anterior" class="anterior"/></form>
     <form action="chef.html"><input type="submit" value="Siguiente" class="siguiente"/></form>
 
-      <img src="img/croissant.jpeg" alt="Croissants Desayuno con diamantes" class="cover">
+    <div class="autor">
+      <img src="img/cocinaabierta_logo.png" alt="Cocina abierta" class="escritor">
+      <p>Artículo creado por: <a href="https://www.hogarmania.com/"><br>Cocina Abierta</a></p>
     </div>
 
   <div class="ficha">
@@ -74,13 +85,26 @@
             <br>Coloca la mantequilla restante (400 gramos) sobre papel de hornear y tapa con otro trozo de papel de hornear. Aplasta la mantequilla con la ayuda del rodillo para que quede en forma de lámina alargarda.</p>
       </div>
 
+      <div class="box2">
+            <img class="cover"
+                 srcset="/img/croissant_detalle-430w.jpg 430w,
+                        /img/croissant_detalle-830w.jpg 830w,
+                        /img/croissant_detalle-1037w.jpg 1037w"
+                sizes="(max-width: 430px) 430px,
+                (max-width: 830px) 830px,
+                 1037px"
+                src="/img/croissant_detalle-430w.jpg"
+                alt="Croissant Mantequilla receta">
+      </div>
+
         <div  class="explicacion">
           <h3>Para rematarlo</h3>
           <p>Añade fresas y cocholate para que sea más completo</p>
       </div>
   </article>
 </div>
-
+    <p>Quien fuera tan elegante comiendo croissants...</p>
+    <img src="img/desayunodiamantes.jpeg" alt="Escena Desayuno con Diamantes" class="mask2">
 </main>
 
 <footer>
@@ -109,7 +133,7 @@
       <li>© 2020 Cristina Ribas</li>
     </ul>
 
-    <a href="index.html#arriba" class="arriba">&xwedge;</a>
+    <a href="diamantes.html#arriba" class="arriba">&xwedge;</a>
   </div>
 </footer>
 

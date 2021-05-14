@@ -19,23 +19,37 @@ main{
 }
 
 .frases {
-  background-color: #c6dae5;
-  color: black;
+  background-color: grey;
+  color: white;
   font-style: italic;
   font-weight: 300;
-  padding: 2em;
+  padding: 1em;
   line-height: 2em;
 }
 
 /* HEADER*/
 
+
+#clip-hero {
+  min-height: 100px;
+  clip-path: url(#hero);
+}
+
+
+img {
+  -webkit-clip-path: url(#mask);
+  clip-path: url(#mask);
+
+  height: 200px;
+}
+
 .hero-image {
   background-image: url("/img/hero-mobile.jpg");
   height: 50%;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  clip-path: polygon(100% 0%, 100% 89%, 91% 98%, 79% 91%, 68% 100%, 53% 91%, 41% 100%, 26% 90%, 15% 100%, 0 89%, 0% 0%);
+  min-height: 600px;
 }
 
 .hero-text {
@@ -378,8 +392,18 @@ li:last-child:after{
 }
 
 .box img {
-  height: 100%;
+  height: 300px;
   width: 100%;
+}
+
+.box2 {
+  height: 300px;
+  width: 100%;
+}
+
+.box2 img {
+  width: 100%;
+  height: 300px;
 }
 
 .cover {
@@ -538,18 +562,19 @@ button:hover{
   color:blue;
 }
 
-.mask {
-  -webkit-mask-box-image: url(/img/autor.svg);
-  mask-border: url(/img/autor.svg);
+.escritor {
+  -webkit-mask-box-image: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
 }
 
 .mask2 {
   mask-image: url(/img/autor3.png);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
+  width:100%;
+  height: auto;
+  max-width: 400px;
 }
-
-
 
 .autor {
   text-align: left;
@@ -574,6 +599,31 @@ button:hover{
 
   .hero-image {
     background-image: url("/img/hero-tablet.jpg");
+    clip-path: polygon(100% 0%, 100% 89%, 91% 98%, 79% 91%, 68% 100%, 53% 91%, 41% 100%, 26% 90%, 15% 100%, 0 89%, 0% 0%);
+    min-height: 400px;
+  }
+
+  .box {
+    width: 100%;
+    height: 500px;
+  }
+
+  .box2 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .box img {
+    height: 500px;
+    width: 100%;
+  }
+
+  .mask2 {
+    mask-image: url(/img/autor3.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    width:100%;
+    height: auto;
   }
 }
 
@@ -695,6 +745,13 @@ button:hover{
     padding-bottom: 2em;
   }
 
+  .mask2 {
+    mask-image: url(/img/autor3.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    width:60%;
+    height: auto;
+  }
 
   /*LISTADO RECETA*/
 
@@ -722,16 +779,21 @@ button:hover{
     margin: 1em 1em 2em 1em;
   }
 
-  .box {
-    height: 20vw;
-    margin-bottom: 0;
+  .container-detalle {
+    width: 100%;
+    height: 100px;
     text-align: center;
   }
 
-  .box img {
-    object-fit: cover;
+  .box {
+    height: 500px;
+    width: 100%;
   }
 
+  .box2 {
+    height: 300px;
+    width: 100%;
+  }
 
   /*DETALLE RECETA*/
   .ficha {
@@ -752,11 +814,6 @@ button:hover{
     margin-right: 0;
     margin-left: 0;
     text-align: left;
-  }
-
-  .container-detalle {
-    width: 100%;
-    text-align: center;
   }
 
   .recetas img {
