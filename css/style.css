@@ -30,16 +30,7 @@ main{
 /* HEADER*/
 
 
-#clip-hero {
-  min-height: 100px;
-  clip-path: url(#hero);
-}
-
-
 img {
-  -webkit-clip-path: url(#mask);
-  clip-path: url(#mask);
-
   height: 200px;
 }
 
