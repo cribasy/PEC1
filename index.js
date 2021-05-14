@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-        const DATE_TARGET = new Date('05/30/2021 0:01 AM');
+        const DATE_TARGET = new Date('10/30/2021 0:01 AM');
 
         const SPAN_DAYS = document.querySelector('span#days');
         const SPAN_HOURS = document.querySelector('span#hours');
