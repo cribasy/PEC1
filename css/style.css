@@ -46,7 +46,7 @@ img {
 .hero-text {
   text-align: center;
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
   top: 25%;
   left: 50%;
   transform: translate(-50%, 10%);
@@ -148,7 +148,7 @@ nav li:last-child {
 
 nav a {
   color: black;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2em;
   text-decoration: none;
 }
@@ -190,10 +190,10 @@ nav a:hover:after {
 
 
 #logo {
-    max-height: 2em;
+    height: 2em;
     font-family: 'Merriweather', serif;
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 700;
     margin: auto;
     padding: 0.5em 1em 0.5em 1em;
 }
@@ -216,7 +216,7 @@ h1 {
 
 h2 {
   font-family: 'Merriweather', serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5em;
 }
 h5 {
@@ -424,7 +424,7 @@ aside {
 
 .apartados p {
   font-family: 'Open sans', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 0.5em;
 }
 
@@ -635,7 +635,7 @@ button:hover{
   }
 
   #logo {
-      max-height: 1.8em;
+      height: 1.8em;
   }
 
   .menu {
