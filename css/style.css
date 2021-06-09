@@ -589,7 +589,7 @@ button:hover{
 @media screen and (min-width: 430px) {
 
   .hero-image {
-    background-image: url("/img/hero-tablet.jpg");
+    background-image: url("/img/hero-tablet.webp");
     clip-path: polygon(100% 0%, 100% 89%, 91% 98%, 79% 91%, 68% 100%, 53% 91%, 41% 100%, 26% 90%, 15% 100%, 0 89%, 0% 0%);
     min-height: 400px;
   }
@@ -625,7 +625,7 @@ button:hover{
   }
 
   .hero-image {
-    background-image: url("/img/hero.jpeg");
+    background-image: url("/img/hero.webp");
   }
 
   /*GENERAL*/
